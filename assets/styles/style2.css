@@ -33,6 +33,11 @@ navigation {
     margin-left: 20px;
 }
 
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
 li {
     float: right;
     display: inline;
