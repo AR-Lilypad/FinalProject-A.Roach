@@ -1,5 +1,6 @@
 const album = document.getElementById("imageBox");
-let image = ["assets/images/calculator.jpg", "assets/images/digitalClock.jpg", "assets/images/groupPJ.jpg"];
+let image = ["assets/images/calculator.jpg", "assets/images/digitalClock.jpg", "assets/images/groupPJ.jpg", "assets/images/DeskTop.jpg"];
+
 
 let i = image.length;
 
@@ -22,3 +23,5 @@ function imageLeft() {
     }
     album.innerHTML = "<img src=" + image[i - 1] + " .jpg>";
 }
+
+
