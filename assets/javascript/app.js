@@ -1,5 +1,5 @@
 const album = document.getElementById("imageBox");
-let image = ["assets/images/calculator.jpg", "assets/images/digitalClock.jpg", "assets/images/groupPJ.jpg", "assets/images/DeskTop.jpg"];
+let image = ["assets/images/calculator.jpg", "assets/images/digitalClock.jpg", "assets/images/groupPJ.jpg", "assets/images/coverPg3.jpg"];
 
 
 let i = image.length;
