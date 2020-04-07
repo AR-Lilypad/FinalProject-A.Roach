@@ -1,7 +1,7 @@
 
 
 
-/* DOM background */
+/* ============DOM background================ */
 body { 
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     background-color: #0d000d;
     }
 
-/* Navigation */
+/* ====================Navigation================= */
 navigation {
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@ navigation {
     margin-left: 20px;
     background-color: #c36724;
     color: #dedede;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: "Raleway", sans-serif ;
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.4);
     /* background-color: #433c34; */
     z-index: 1000;
@@ -50,7 +50,7 @@ li a {
     display: inline-block;
 }
 
-/* Slider and images */
+/* ===============Home Page | Slider and images================== */
 #albumPics {
     width: 850px;
     height: 500px;
@@ -92,6 +92,79 @@ button {
     left: 0;
 }
 
+/* ============================================== Design Page ==================================== */
+     /* ------------------ Main Elements ------------------- */
+     .designsContent {
+         margin: 75px 25px 10px 25px;
+         font-family: "Raleway", sans-serif; 
+         color: #dedede;
+     }
+
+
+/* =================Modal=============== */
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #e2bea4;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1ps solid black;
+}
+
+.modal-header .modalTitle {
+    width: 100%;
+    font-family: "Raleway", sans-serif ;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #777;
+    padding-bottom: 20px;
+}
+
+.modal-header #closeButton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-left: 90%;
+    margin-top: -10px;
+}
+
+.modal-body {
+    font-family: "Raleway", sans-serif ;
+    padding: 10px 15px; 
+}
+
+.contactUs {
+    width: 70px;
+    font-size: 12px;
+
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.form-control { 
+    width: 100%;
+    height: 30px;
+}
+
+
+/* ==============Footer================ */
 footer {
     width: 100%;
     height: 50px;
@@ -109,3 +182,5 @@ footer {
     font-family: sans-serif;
     font-size: 10px;
 }
+
+

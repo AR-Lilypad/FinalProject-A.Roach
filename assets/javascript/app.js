@@ -4,7 +4,7 @@ let image = ["assets/images/calculator.JPG", "assets/images/digitalClock.JPG", "
 
 let i = image.length;
 
-// manual function carousel
+// ======  manual function carousel  ===========
 
 function imageRight() {
     if (i < image.length) {
@@ -24,4 +24,27 @@ function imageLeft() {
     album.innerHTML = "<img src=" + image[i - 1] + " .jpg>";
 }
 
+
+// =================== Modal ================================
+
+function showModal() {
+    document.getElementById("modal").style.visibility = "visible";
+}
+setTimeout("showModal()", 5000);
+
+function hideModal() {
+    document.getElementById("modal").style.visibility = "hidden";
+}
+setTimeout("hideModal()", 20000);
+
+// function clickHideModal() {
+//     document.getElementById("closeButton")
+//         .addEventListener("click", clickHideModal).style.visibility = "hidden";
+// };
+
+const closeButton = document.getElementById("closeButton");
+
+closeButton.addEventListener("click", function () {
+    hideModal();
+});
 
