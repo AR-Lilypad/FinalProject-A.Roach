@@ -39,15 +39,16 @@ navigation {
     right: 0;
 }
 
-li {
-    float: right;
-    display: inline;
-    text-decoration: none;
+ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
     padding: 0 20px 0 20px;
 }
 
-li a {
-    display: inline-block;
+li {
+    margin: 0 10px;
+    padding: 0 10px;
 }
 
 /* ===============Home Page | Slider and images================== */
@@ -93,13 +94,123 @@ button {
 }
 
 /* ============================================== Design Page ==================================== */
-     /* ------------------ Main Elements ------------------- */
-     .designsContent {
-         margin: 75px 25px 10px 25px;
+     /* ------------------ Top Elements ------------------- */
+     
+     
+     section {
+         display: flex; 
+         flex-wrap: wrap;
+         margin: 10% 20%;
          font-family: "Raleway", sans-serif; 
-         color: #dedede;
-     }
+         color: rgb(175, 173, 173);
+         border: solid 1px goldenrod;
+         background-color: #3f173f;
+        }
+        .flex1 {
+            order: 1;
+        }
 
+        .flex2 {
+            order: 2;
+            flex-basis: 50%;
+        }
+
+/* ------------------ First Section | Calculator ------------------- */
+
+        #firstSection {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: left;
+            margin: 10% 20%;
+            font-family: "Raleway", sans-serif; 
+            color: #dedede;
+            display: flex;
+            border: solid 1px goldenrod;
+            background-color: #3f173f;
+           }
+           .flex3 {
+               order: 1;
+               flex-basis: 50%;
+               border-right: solid goldenrod 1px;
+           }
+   
+           .flex4 {
+               order: 2;
+               flex-basis: 50%;
+           }
+
+           #calculator {
+            border-right: solid goldenrod 1px;
+        }
+         
+           #firstSection {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            /* Typography */
+            font-size: 16px;
+            color: #777;
+            text-align: center;
+            background-image: url("../images/oriental-tiles.png")
+          }
+        
+          #title {
+              margin-top: 150px;
+              text-align: center;
+              font-family: 'Bungee Inline';
+              font-size: 18px;
+              color: #dedfe0;
+              letter-spacing: 1.5px;
+          }
+        
+          .instructions {
+              text-align: center;
+              font-size: 14px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+        
+          #displayResults {
+            width: 75px;
+            max-height: 35px;
+            margin: 0 auto;
+            margin-top: 25px;
+            background-color: #f28e1f;
+            text-align: right;
+            font-size: 12px;
+            padding: 15px 10px 0 0;
+            color: #fff;
+        
+          }
+          
+        
+          #number1, #number2 {
+              width: 50px;
+              height: 25px;
+              margin: 2px;
+              font-size: 10px;
+              text-align: right;
+              background-color: #f3f3f4;
+          }
+        
+          .row button {
+            width: 35px;
+            height: 23px;
+            margin: 2px;
+            font-size: 10px;
+            background-color: #49b5cc;
+            color: #fff;
+        }
+        
+         #r3, #r4, button:hover {
+              background-color: #ffcd96;
+          }
+        
+          #r4, #clearBtn {
+            width: 25px; 
+            height: 12px;
+            font-size: 9px;
+        } 
+
+
+        
 
 /* =================Modal=============== */
 #modal {

@@ -23,43 +23,77 @@
     </navigation>
 
     <!-- Page Content -->
-    <div id="container" class="designsContent">
-        <div class="grid">
-            <div class="col-6-6 intro">
-                <div class="col-5-6 text">
-                    <h1>Ipsom 10</h1>
-                    <p>lorem 60</p>
+    <section>
+        <div id="intro">
+            <div class="row">
+                <div id="headline" class="col-6">
+                    <h3 class="flex1">The First Three Designs for FE-JS Projects</h3><br>
+                </div>
+            </div>
+            <div class="row">
+                <div id="description" class="col-3">
+                    <p class="flex2">This site represents small projects developed while learning the basics of
+                        Javascript in a
+                        way
+                        to understand
+                        its functionality. GitHub version control management system was also introduced in order to
+                        practice
+                        project
+                        management in teams.</p><br>
+                </div>
+                <div id="description2" class="col-3">
+                    <p class="flex2">The first project was a simple calculator. <br><br> The second a digital clock with
+                        a
+                        changing
+                        background. <br><br>
+                        Tthe third a team project and finally the final project of the semester, this small portfolio.
+                    </p>
                 </div>
             </div>
         </div>
-        <div id="pj1" class="calculatorContent"></div>
-        <div class="calculatorGrid">
-            <div class="col-1-3 calcImg">
-                <img src="">
-            </div>
-            <div class="col-1-3 calcText">
-                <h1>Lorem 10 </h1>
-                <p> ipsum 75 </p>
-            </div>
-            <div class="calcGrid">
-                <div class="col-3-6 calcImg">
-                    <img src="">
-                </div>
-                <div class="col-3-6 calcText">
-                    <h1>Lorem 10 </h1>
-                    <p> ipsum 75 </p>
-                </div>
-                <div class="calcGrid">
-                    <div class="col-3-6 calcImg">
-                        <img src="">
+        </div>
+    </section>
+    <div class="sectionContainer">
+        <div id="firstSection">
+            <div id="calculator" class="flex3">
+                <!-- <div id="title"> -->
+                <h5>A very Simple JS Calculator!</h5>
+                <p class="instructions">Type a number in each of the boxes, then click the operator you wish to
+                    calculate with. <br>
+                    Use the up/down scroll arrows to increase or decrease your typed number.</p>
+                <!-- </div> -->
+
+                <div class="row" id="r1">
+                    <div id="displayResults">
+                        <h5>0</h5>
                     </div>
-                    <div class="col-3-6 calcText">
-                        <h1>Lorem 10 </h1>
-                        <p> ipsum 75 </p>
+
+                    <div class="row" id="r2">
+                        <input type="number" id="number1">
+                        <input type="number" id="number2">
+                    </div>
+
+                    <div class="row" id="r3">
+                        <button id="addBtn">+</button>
+                        <button id="subtractBtn">-</button>
+                        <button id="multiplyBtn">&times;</button>
+                        <button id="divideBtn">&#247;</button>
+                    </div>
+
+                    <div class="row" id="r4">
+                        <button id="clearBtn">Clear</input>
                     </div>
                 </div>
+            </div>
+
+            <div id="calculatorText" class="flex4">
+                <h3>Calculator Mechanics</h3>
+                <p class="textCopy">The calculator is built using the javascript dot method of `.getElementByID` and
+                    Math functions.</p>
             </div>
         </div>
+    </div>
+
     </div>
     <!-- end page content -->
 
