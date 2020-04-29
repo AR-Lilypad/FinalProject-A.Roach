@@ -30,12 +30,12 @@ function imageLeft() {
 function showModal() {
     document.getElementById("modal").style.visibility = "visible";
 }
-setTimeout("showModal()", 10000);
+setTimeout("showModal()", 15000);
 
 function hideModal() {
     document.getElementById("modal").style.visibility = "hidden";
 }
-setTimeout("hideModal()", 15000);
+setTimeout("hideModal()", 20000);
 
 
 const closeButton = document.getElementById("closeButton");
