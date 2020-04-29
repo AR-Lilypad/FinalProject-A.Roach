@@ -35,7 +35,7 @@ setTimeout("showModal()", 15000);
 function hideModal() {
     document.getElementById("modal").style.visibility = "hidden";
 }
-setTimeout("hideModal()", 20000);
+setTimeout("hideModal()", 25000);
 
 
 const closeButton = document.getElementById("closeButton");
