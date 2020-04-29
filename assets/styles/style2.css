@@ -219,7 +219,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
-    border: 3px solid black;
+    border: 3px solid #fff;
     border-radius: 10px;
     z-index: 10;
     background-color: #e2bea4;
