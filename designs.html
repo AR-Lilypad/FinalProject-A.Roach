@@ -11,91 +11,68 @@
 <body>
 
     <!-- Navigation -->
-    <navigation>
-        <div class="navbar">
-            <h4>Websites by Design Inspirations</h4>
-            <ul class="menu">
-                <li>Contact Info</li>
-                <li>About Us</li>
-                <li>Designs</li>
+    <header>
+        <div class="logo">
+            <img class="logoImg" src="assets/images/logo.png" style="width:100px; height: 100px">
+            <h2 class="logoName">Design <br> Inspirations <br> Websites</h2>
+        </div>
+        <nav>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="designs.html">Designs</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <!-- projects -->
+    <div id="work" class="wrapper">
+        <div class="workContainer">
+            <a href="https://ar-lilypad.github.io/calculator/">
+                <iframe src="https://ar-lilypad.github.io/calculator/" width="70%" height="300">
+                    <p>Your browser does not support iframes.</p>
+                </iframe></a>
         </div>
-    </navigation>
-
-    <!-- Page Content -->
-    <section>
-        <div id="intro">
-            <div class="row">
-                <div id="headline" class="col-6">
-                    <h3 class="flex1">The First Three Designs for FE-JS Projects</h3><br>
-                </div>
-            </div>
-            <div class="row">
-                <div id="description" class="col-3">
-                    <p class="flex2">This site represents small projects developed while learning the basics of
-                        Javascript in a
-                        way
-                        to understand
-                        its functionality. GitHub version control management system was also introduced in order to
-                        practice
-                        project
-                        management in teams.</p><br>
-                </div>
-                <div id="description2" class="col-3">
-                    <p class="flex2">The first project was a simple calculator. <br><br> The second a digital clock with
-                        a
-                        changing
-                        background. <br><br>
-                        Tthe third a team project and finally the final project of the semester, this small portfolio.
-                    </p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <div class="sectionContainer">
-        <div id="firstSection">
-            <div id="calculator" class="flex3">
-                <!-- <div id="title"> -->
-                <h5>A very Simple JS Calculator!</h5>
-                <p class="instructions">Type a number in each of the boxes, then click the operator you wish to
-                    calculate with. <br>
-                    Use the up/down scroll arrows to increase or decrease your typed number.</p>
-                <!-- </div> -->
-
-                <div class="row" id="r1">
-                    <div id="displayResults">
-                        <h5>0</h5>
-                    </div>
-
-                    <div class="row" id="r2">
-                        <input type="number" id="number1">
-                        <input type="number" id="number2">
-                    </div>
-
-                    <div class="row" id="r3">
-                        <button id="addBtn">+</button>
-                        <button id="subtractBtn">-</button>
-                        <button id="multiplyBtn">&times;</button>
-                        <button id="divideBtn">&#247;</button>
-                    </div>
-
-                    <div class="row" id="r4">
-                        <button id="clearBtn">Clear</input>
-                    </div>
-                </div>
-            </div>
-
-            <div id="calculatorText" class="flex4">
-                <h3>Calculator Mechanics</h3>
-                <p class="textCopy">The calculator is built using the javascript dot method of `.getElementByID` and
-                    Math functions.</p>
-            </div>
+        <div id="workWrap" class="description>">
+            <h3>A simple Calculator</h3>
+            <p class="calcText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil debitis
+                necessitatibus optio accusantium fugiat totam nulla delectus, rerum perspiciatis assumenda ducimus
+                quo
+                labore, eligendi, non similique consequatur minima unde?</p>
         </div>
     </div>
 
+    <div id="work2" class="wrapper2">
+        <div id="workWrap2" class="description>">
+            <h3>A very Simple Digital Clock!</h3>
+            <p class="clockText">This digital clock shows time in 12 hour format and exhibits whether the time is
+                AM or PM. <br>
+                Note how the background color changes with each passing second. That is because the hexcode use
+                matches the time.</p>
+        </div>
+
+        <div class="workContainer2">
+            <a href="https://ar-lilypad.github.io/Digital-Clock/">
+                <iframe src="https://ar-lilypad.github.io/Digital-Clock/" width="70%" height="300">
+                    <p>Your browser does not support iframes.</p>
+                </iframe></a>
+        </div>
     </div>
-    <!-- end page content -->
+
+    <div id="work3" class="wrapper3">
+        <div class="workContainer">
+            <a href="https://ar-lilypad.github.io/Group3-PJ/contact.html">
+                <iframe src="https://ar-lilypad.github.io/Group3-PJ/contact.html" width="70%" height="300">
+                    <p>Your browser does not support iframes.</p>
+                </iframe></a>
+        </div>
+        <div id="workWrap" class="description>">
+            <h2>Group Project <br><br>
+                Breakfast of Champions</h2>
+            <p class="textCopy">The calculator is built using the javascript dot method of `.getElementByID` and
+                Math functions.</p>
+        </div>
+    </div>
 
     <!-- begin modal -->
 
@@ -105,6 +82,7 @@
 
             <button id="closeButton">&times;</button>
         </div>
+
         <div class="modal-body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, assumenda laboriosam?
                 Officiis necessitatibus dolore explicabo consectetur sit fugiat, tenetur molestias?</p>
@@ -112,13 +90,8 @@
                 <div class="form-group col-xs-12 col-sm-12">
                     <label for="nameInput" class="col-sm-12 col-form-label">Your Full Name: </label><br />
                     <input type="text" class="form-control" id="nameInput" placeholder="" />
-                </div>
-            </div>
-            <br />
-            <div class="form-row">
-                <div class="form-group col-xs-12 col-sm-12">
-                    <label for="emailInput" class="col-sm-12 col-form-label">Email: </label><br />
-                    <input type="email" class="form-control" id="emailInput" placeholder="" />
+                    <label for="emailInput" class="col-sm-12 col-form-label">Your Emaol Address:: </label><br />
+                    <input type="text" class="form-control" id="emailInput" placeholder="" />
                 </div>
             </div>
             <br />
@@ -126,7 +99,6 @@
             </form>
         </div>
     </div>
-
 
     <footer>
         <p>Copyright 2020 by Angela Roach</p>
@@ -139,7 +111,3 @@
 </body>
 
 </html>
-
-
-
-Photo by Tamas Katona on Unsplash

@@ -30,20 +30,15 @@ function imageLeft() {
 function showModal() {
     document.getElementById("modal").style.visibility = "visible";
 }
-setTimeout("showModal()", 5000);
+setTimeout("showModal()", 10000);
 
 function hideModal() {
     document.getElementById("modal").style.visibility = "hidden";
 }
-setTimeout("hideModal()", 20000);
+setTimeout("hideModal()", 15000);
 
-// function clickHideModal() {
-//     document.getElementById("closeButton")
-//         .addEventListener("click", clickHideModal).style.visibility = "hidden";
-// };
 
 const closeButton = document.getElementById("closeButton");
-
 closeButton.addEventListener("click", function () {
     hideModal();
 });
